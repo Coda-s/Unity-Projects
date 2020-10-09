@@ -7,6 +7,7 @@ public class Heart : MonoBehaviour
 
     private SpriteRenderer sr; 
 
+    // 引用
     public Sprite BrokenSprite;
     public GameObject Explode;
     public AudioClip dieAudio;

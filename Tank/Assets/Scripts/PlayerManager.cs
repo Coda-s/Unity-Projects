@@ -11,6 +11,7 @@ public class PlayerManager : MonoBehaviour
     public int score = 0; // 分数
     public bool isDead = false; // 是否死亡
     public bool isDefeated = false; // 是否结束
+    public float stopTimeVal = 10.0f;
 
     // 引用
     public GameObject born;

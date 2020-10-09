@@ -10,6 +10,8 @@ ScriptsOnlyBuild:
     - Option
     - Player
     - PlayerManager
+    - QuitGame
+    - Tools
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
@@ -27,6 +29,7 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
@@ -64,33 +67,39 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11262}
+      Script: {instanceID: 11266}
     - Class: 114
-      Script: {instanceID: 11552}
+      Script: {instanceID: 11556}
     - Class: 114
-      Script: {instanceID: 11606}
+      Script: {instanceID: 11558}
     - Class: 114
-      Script: {instanceID: 12268}
+      Script: {instanceID: 11612}
     - Class: 114
-      Script: {instanceID: 12468}
+      Script: {instanceID: 11714}
     - Class: 114
-      Script: {instanceID: 13732}
+      Script: {instanceID: 11806}
     - Class: 114
-      Script: {instanceID: 14342}
+      Script: {instanceID: 11956}
     - Class: 114
-      Script: {instanceID: 14914}
+      Script: {instanceID: 12280}
     - Class: 114
-      Script: {instanceID: 16584}
+      Script: {instanceID: 12384}
     - Class: 114
-      Script: {instanceID: 17326}
+      Script: {instanceID: 12482}
     - Class: 114
-      Script: {instanceID: 17946}
+      Script: {instanceID: 12804}
     - Class: 114
-      Script: {instanceID: 19862}
+      Script: {instanceID: 12990}
     - Class: 114
-      Script: {instanceID: 23020}
+      Script: {instanceID: 13750}
     - Class: 114
-      Script: {instanceID: 24432}
+      Script: {instanceID: 13828}
+    - Class: 114
+      Script: {instanceID: 13972}
+    - Class: 114
+      Script: {instanceID: 14364}
+    - Class: 114
+      Script: {instanceID: 27692}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -127,17 +136,17 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11262}
+      Script: {instanceID: 11266}
     - Class: 114
-      Script: {instanceID: 11606}
+      Script: {instanceID: 11612}
     - Class: 114
-      Script: {instanceID: 12268}
+      Script: {instanceID: 12280}
     - Class: 114
-      Script: {instanceID: 13732}
+      Script: {instanceID: 12488}
     - Class: 114
-      Script: {instanceID: 14342}
+      Script: {instanceID: 13750}
     - Class: 114
-      Script: {instanceID: 26490}
+      Script: {instanceID: 14364}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -209,6 +218,12 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
+      Hash: 618f439519e7370a0eadd726679a7321
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MapCreator
+  - hash:
+      serializedVersion: 2
       Hash: 499fd23433e68e265d153aa6b95d0047
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -257,6 +272,12 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 8321b840f4b27377b88af7cbab51fe06
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Tools
+  - hash:
+      serializedVersion: 2
       Hash: 523ce309f50d9eee6a8fc0e2f86c9c97
     assemblyName: Unity.2D.SpriteShape.Runtime.dll
     namespaceName: 
@@ -273,6 +294,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 15d96d7e3a72198cb4cf3eb2e4f3fdb8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Enemy
   - hash:
       serializedVersion: 2
       Hash: 0dbc3be398b4869a5c8d0d8481ee402c
@@ -315,6 +342,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RectMask2D
+  - hash:
+      serializedVersion: 2
+      Hash: 6d7d0db7259a9c5967b6a8d11f08b33e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerManager
   - hash:
       serializedVersion: 2
       Hash: 1103fb0758976355cdf9b7d5ce9cb7e0
@@ -389,10 +422,22 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 42b05187230f2f1c01dd0240b6332154
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Heart
+  - hash:
+      serializedVersion: 2
       Hash: c73a061dfe9a222e683e6364d326d151
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
+  - hash:
+      serializedVersion: 2
+      Hash: 8cf7da16a9fc1bd34ca79765bcee3679
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Option
   - hash:
       serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
@@ -417,6 +462,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 4abdef791f3b42b17d493a973b95cc57
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Born
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -533,6 +584,18 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: 3a44c8f5e2f47df552a9bf94b789f6d3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Bullet
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Explode
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -641,54 +704,12 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 3a44c8f5e2f47df552a9bf94b789f6d3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Bullet
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Explode
-  - hash:
-      serializedVersion: 2
-      Hash: 42b05187230f2f1c01dd0240b6332154
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Heart
-  - hash:
-      serializedVersion: 2
-      Hash: deb663136f210ed955a468511179dd68
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Enemy
-  - hash:
-      serializedVersion: 2
-      Hash: 4abdef791f3b42b17d493a973b95cc57
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Born
-  - hash:
-      serializedVersion: 2
-      Hash: 7cc0228c3b3735da7c2181b35e6852e2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MapCreator
-  - hash:
-      serializedVersion: 2
-      Hash: 0d99c7cee2d9af1bb1ec0a71718017be
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerManager
-  - hash:
-      serializedVersion: 2
-      Hash: 8cf7da16a9fc1bd34ca79765bcee3679
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Option
+    className: QuitGame
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainUI.unity
   - Assets/Scenes/MainScene.unity
-  playerPath: E:/unity/Projects/Tank/Tank.exe
+  playerPath: E:/unity/Projects/Tank/Application/Tank2.0/Tank.exe

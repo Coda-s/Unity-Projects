@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4e97e50c189d34caa19f48599c6f81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move_speed: 3
+  move_speed: 6
   tankSprites:
   - {fileID: 21300000, guid: c3a4b3c783ddce7438622efbc82d5538, type: 3}
   - {fileID: 21300016, guid: c3a4b3c783ddce7438622efbc82d5538, type: 3}
@@ -106,8 +106,6 @@ MonoBehaviour:
   bullet: {fileID: 5835858492598537460, guid: cb848b485b5c27b43883fb7b39594c8d, type: 3}
   explode: {fileID: 853110288457200447, guid: 4de5db1e9ff44e842811507d7985be0c, type: 3}
   defendEffect: {fileID: 2789694378368212427}
-  playerManager: {fileID: 997793785295502884, guid: 0cc0a74b0d131914f88fcaf5d6ff5a94,
-    type: 3}
 --- !u!50 &1801981406320066710
 Rigidbody2D:
   serializedVersion: 4

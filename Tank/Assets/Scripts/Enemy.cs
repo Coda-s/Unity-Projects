@@ -14,6 +14,8 @@ public class Enemy : MonoBehaviour
     // 计时器
     private float timeVal;
     private float rotateTimeVal = 2.0f;
+    public bool isStopped = false;
+    public bool isRare = false;
     
 
     // 引用
@@ -38,6 +40,15 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(PlayerManager.Instance.stopTimeVal >= 10.0f){
+            isStopped = false;
+        } else {
+            isStopped = true;
+            PlayerManager.Instance.stopTimeVal += Time.deltaTime;
+        }
+
+        if(isStopped) return;
+
         // 攻击的时间间隔
         if(timeVal >= 3.0f){
             Attack();
@@ -45,10 +56,11 @@ public class Enemy : MonoBehaviour
         } else {
             timeVal += Time.deltaTime;
         }
+        
     }
 
     private void FixedUpdate(){
-        Move(false);  
+        if(!isStopped) Move(false);  
     }
 
     // 坦克的移动方法
@@ -115,6 +127,10 @@ public class Enemy : MonoBehaviour
         Instantiate(explode, transform.position, transform.rotation);
         // 得分
         PlayerManager.Instance.score++;
+        // 如果为稀有坦克，生成道具
+        if(isRare){
+            MapCreator.Instance.GenerateTool();
+        }
         // 死亡
         Destroy(gameObject);
     }

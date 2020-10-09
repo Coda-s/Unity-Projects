@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Born : MonoBehaviour
 {
-
     public GameObject player;
-
     public GameObject[] enemyList;
     public bool createPlayer = false;
+
+    public static List<GameObject> enemys;
 
 
     // Start is called before the first frame update
@@ -28,8 +28,11 @@ public class Born : MonoBehaviour
         if(createPlayer){
             Instantiate(player, transform.position, Quaternion.identity);
         } else {
-            int num = Random.Range(0, 2);
-            Instantiate(enemyList[num], transform.position, Quaternion.identity);
+            int num = Random.Range(0, 6);
+            if(num < 4) num /= 2;
+            else num -= 2;
+            GameObject enemy = Instantiate(enemyList[num], transform.position, Quaternion.identity);
+            if(num >= 2) enemy.GetComponent<Enemy>().isRare = true;
         }
     }
 }

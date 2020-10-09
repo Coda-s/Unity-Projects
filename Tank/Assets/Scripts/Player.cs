@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     // 属性值
-    public float move_speed = 3.0f;
+    public float move_speed = 6.0f;
     private Vector3 bulletEulerAngles;
     private float timeVal;
     private float defendTimeVal = 3.0f;
@@ -106,4 +106,9 @@ public class Player : MonoBehaviour
         Destroy(gameObject);
     }
 
+    // 坦克获得无敌
+    private void GetShield(){
+        isDefended = true;
+        defendTimeVal = 3.0f;
+    }
 }

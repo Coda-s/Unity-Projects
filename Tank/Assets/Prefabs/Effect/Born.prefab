@@ -118,4 +118,6 @@ MonoBehaviour:
   enemyList:
   - {fileID: 293474498475337637, guid: a07a9c7e31c696f4eafa2e0e74f3a324, type: 3}
   - {fileID: 293474498475337637, guid: 5c765e06fbaade04fb47d0db8abd9807, type: 3}
+  - {fileID: 293474498475337637, guid: efb4ed6206c724c419ce03ccf3ff7d73, type: 3}
+  - {fileID: 293474498475337637, guid: 80d4a3a277ddf9f419c7903593c11791, type: 3}
   createPlayer: 0
